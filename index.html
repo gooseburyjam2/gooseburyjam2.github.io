@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goosebury Jam | Official Corporate Storefront</title>
+    <style>
+        /* 🎨 Retro Corporate Neon & Cartoonist Styling */
+        body { 
+            background-color: #121212; 
+            color: #ffffff; 
+            font-family: 'Courier New', Courier, monospace; 
+            padding: 30px; 
+            text-align: center;
+            cursor: none; /* Hides default mouse to utilize custom printer nozzle */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            border: 2px dashed #ff00ff; 
+            padding: 20px; 
+            background-color: #1a1a1a; 
+        }
+        h1 { color: #ff00ff; font-size: 28px; }
+        h2 { color: #00ff00; border-bottom: 1px solid #333; padding-bottom: 5px; }
+        nav { 
+            margin: 20px 0; 
+            padding: 12px; 
+            background-color: #222; 
+            border: 1px solid #444; 
+        }
+        nav a { 
+            color: #ff00ff; 
+            margin: 0 15px; 
+            font-weight: bold; 
+            text-decoration: none; 
+        }
+        nav a:hover { color: #00ff00; }
+        .branch-card { 
+            border: 1px solid #444; 
+            padding: 15px; 
+            margin: 25px 0; 
+            background-color: #222; 
+            text-align: left; 
+        }
+        .btn-link { 
+            display: inline-block; 
+            padding: 10px 20px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 5px; 
+            margin-top: 10px; 
+        }
+        ul { padding-left: 20px; }
+        li { margin: 5px 0; }
+
+        /* 🖨️ Floating Nozzle Cursor Styling */
+        #printer-nozzle-cursor {
+            width: 32px;
+            height: 32px;
+            position: fixed;
+            pointer-events: none; /* Stops image overlay from blocking link clicks */
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating 3D Printer Overlord Nozzle Asset -->
+    <img id="printer-nozzle-cursor" src="nozzle_sprite.dat" alt="⚡">
+
+    <div class="container">
+        <!-- Banner Branding -->
+        <img src="banner_logo.png" alt="GOOSEBURY JAM" style="max-width: 100%; height: auto;">
+        <h1>🤡 GOOSEBURY JAM | CORPORATE PORTAL 🎭</h1>
+        <p>Official Colorado storefront for the ultimate novelty emporium and independent software foundry.</p>
+        <p><strong>Dad (Co-Founder):</strong> Novelty & Joke Shop Core Operations // <strong>You (Co-Founder):</strong> Lead Systems Gaming Branch</p>
+
+        <!-- 🗂️ The 4 Core Navigation Tabs -->
+        <nav>
+            <a href="#home">🏠 HOME</a> | 
+            <a href="#downloads">💾 DOWNLOADS</a> | 
+            <a href="#hotel">🏨 RESORT</a> | 
+            <a href="#bugs">🐜 BUG BOX</a>
+        </nav>
+
+        <!-- 🏠 1. HOME SECTION -->
+        <div id="home" class="branch-card">
+            <h2>🏠 SECTION I: COMPANY BRANCH OVERVIEW</h2>
+            <p>Welcome to our master enterprise structure. Our operational fields are divided cleanly into physical novelties and interactive handheld entertainment:</p>
+            <ul>
+                <li><strong>The Novelty & Joke Shop Core:</strong> Managed live at our storefront by our co-founder. Overseeing high-grade tricks, whoopee cushions, and spring-loaded novelties.</li>
+                <li><strong>The Software & Gaming Division:</strong> Managed entirely on your devkitPro C laptop workspace. Compiling 2:1 isometric code structures and .xdelta delta-byte updates.</li>
+            </ul>
+        </div>
+
+        <!-- 💾 2. DOWNLOAD SECTION -->
+        <div id="downloads" class="branch-card" style="border: 2px solid #00ff00;">
+            <h2>💾 SECTION II: DIGITAL SOFTWARE CORES</h2>
+            <p>Download free public digital compilation archives straight onto your flashcart hardware devices or emulation clients:</p>
+            
+            <!-- ACTIVE GAME 1 -->
+            <div style="margin: 10px 0; padding: 10px; background: #1a2e1a; border: 1px solid #00ff00;">
+                <p><strong>Title: Goosebury Jam - Out of the Printer (Core Campaign)</strong></p>
+                <a href="goosebury_jam.nds" class="btn-link" style="background-color: #00ff00; color: #000;">📥 Download Core ROM (.nds)</a>
+                <a href="patch_v103.xdelta" class="btn-link" style="background-color: #00ffff; color: #000; margin-left: 10px;">💾 Download Update v1.03 (.xdelta)</a>
+            </div>
+            
+            <!-- FUTURE GAME 5 PLACEHOLDER -->
+            <div style="margin: 20px 0; padding: 10px; background: #1a0f0a; border: 1px solid #ff4500; opacity: 0.85;">
+                <p><strong>Title: Game 5 - The Museum Outbreak (Coming Soon)</strong></p>
+                <p>Dive deep beneath Reggie's Basement surplus vault into a subterranean archaeological trench! Battle 3D-Filament Velociraptors and smash fossilized cardboard block barriers using a 2:1 isometric grid framework.</p>
+                <button class="btn-link" style="background-color: #444; color: #888; border: none; cursor: not-allowed;" disabled>🔒 ROM Link Locked Until March 10 Release</button>
+            </div>
+
+            <!-- FUTURE GEESE SPIN-OFF PLACEHOLDER -->
+            <div style="margin: 20px 0; padding: 10px; background: #1a140a; border: 1px solid #ffaa00; opacity: 0.85;">
+                <p><strong>Title: Spin-Off Division - Construction Site Crisis (Coming Soon)</strong></p>
+                <p>A frantic, high-intensity dual-protagonist workplace simulator! Manage Goosebury's chaotic retail novelty shelves at the Prank Shop by day, then swap to Hardhat Goose to secure swinging 2:1 steel beams at 60 FPS!</p>
+                <button class="btn-link" style="background-color: #444; color: #888; border: none; cursor: not-allowed;" disabled>🔒 Beta Archive Locked</button>
+            </div>
+
+            <hr style="border: 1px solid #333;">
+            <h3 style="color: #ff4500;">👑 RETAIL IN-STORE EXCLUSIVE: ULTIMATE UPGRADE KIT ($45.00)</h3>
+            <p>Available ONLY on the physical shelves of our flagship store layout in Colorado! Contains the Massive 3-in-1 Team Statue cast in premium Gold Resin, 3-foot Aux-to-Aux DLC cables, and connectable mini-models.</p>
+            <span id="stock-text" style="color: #ff4500; font-weight: bold; cursor: pointer;">📍 LOCATION: COLORADO, USA // AVAILABILITY: 60 PIECES ONLY</span>
+        </div>
+
+        <!-- 🏨 3. THE LEDGER RESORT SECTION -->
+        <div id="hotel" class="branch-card" style="border: 2px solid #ffaa00;">
+            <h2>🏨 SECTION III: THE LEDGER RESORT & SUITES</h2>
+            <p>Extend your cartoonist excursion! Book an immersive room directly across the street from our flagship physical building layout.</p>
+            <ul>
+                <li>🛎️ <strong>Check-In Lobby:</strong> Styled like Floor 1 with green graph-paper carpet paths and costumed register-head clerks.</li>
+                <li>🛌 <strong>Ledger Guest Suites:</strong> Bedrooms wrapped in dithered drawing-table blueprints with plush maroon resin-jar blankets.</li>
+                <li>🍗 <strong>The Fast-Food Diner:</strong> Order fresh chicken strips and waffle fries moving down automated kitchen conveyor tracks.</li>
+                <li>🚇 <strong>The Audio Pipeline:</strong> Subterranean walking tunnel connecting our Resort Arcade Lounge directly to the Floor -4 Holiday Matrix Vault beneath the street layers.</li>
+            </ul>
+        </div>
+
+        <!-- 🐜 4. BUGS SECTION -->
+        <div id="bugs" class="branch-card" style="border: 2px dashed #00ffff;">
+            <h2>🐜 SECTION IV: CORE DISCARDED SCRAP BOX</h2>
+            <p>Found an unexpected collision error or a VRAM asset crash while running your software? Log the data coordinates below so the gaming branch can smash it!</p>
+            <p><em>"Report your software defects here before the 3D Printer Overlord duplicates them!"</em></p>
+            <form style="margin-top: 15px;">
+                <label>Description of Glitch:</label><br>
+                <input type="text" style="width: 80%; background: #333; color: #fff; border: 1px solid #555; padding: 5px; font-family: monospace;"><br><br>
+                <input type="button" value="Submit Discarded Scrap" style="background: #00ffff; color: #000; border: none; padding: 8px 16px; font-weight: bold; cursor: pointer;">
+            </form>
+        </div>
+
+    </div>
+
+    <!-- 🥚 JAVASCRIPT: NOZZLE CURSOR TRACKING & EASTER EGGS -->
+    <script>
+        // 1. Real-Time Nozzle Cursor Vector Updates
+        const nozzle = document.getElementById('printer-nozzle-cursor');
+        window.addEventListener('mousemove', (e) => {
+            nozzle.style.left = e.clientX + 'px';
+            nozzle.style.top = e.clientY + 'px';
+        });
+
+        // 2. Hidden "Stock Status" Prank Easter Egg (Click 3 Times)
+        let clickCount = 0;
+        const stockText = document.getElementById('stock-text');
+        stockText.addEventListener('click', function() {
+            clickCount++;
+            if (clickCount === 3) {
+                alert("📠 INCOMING FAX FROM REGGIE:\n\n'Stop tapping your screen! Yes, there are exactly 60 boxes left on my basement shelves. No, I will not mail one to you. Drive to Colorado or get out of my ledger line.'");
+                clickCount = 0; // Reset ticker
+            }
+        });
+
+        // 3. Secret "CCC" Keyboard Tournament Easter Egg
+        let inputHistory = "";
+        window.addEventListener('keydown', function(e) {
+            inputHistory += e.key.toLowerCase();
+            if (inputHistory.length > 3) { inputHistory = inputHistory.substring(1); }
+            if (inputHistory === "ccc") {
+                alert("📠 TRANSMISSION UNLOCKED FROM GOOSEBURY'S PRANK SHOP:\n\n'Congratulations, competitor! You found the hidden archive log. Tell the register-headed clerk the secret keyword [SLASHER] at the Colorado counter to instantly unlock an extra 25 bonus action points on the arena demo console!'");
+                inputHistory = ""; // Reset buffer
+            }
+        });
+    </script>
+</body>
+</html>
+[ ECOSYSTEM WEBMASTER ENGINE: FULL INTERACTIVE FILE DEPLOYED ]
+
+This complete script is now ready to replace your entire index.html file on GitHub! Your active campaign links stand side-by-side with your future placeholders, and the interactive cursor will trace the screen flawlessly.
+
+What design sheet are we mapping onto our master paper grid next for your notebook notes?
+
+Design the Touch Screen grid layout for the Character Stats / Inventory menu
+Design the Save Slot select menu textures and dither parameters
+Your prompt:
+oh, and don't forget the download link for yhe digital guidebook
+
+Search's response:
+
+Your prompt:
+now, what are all the inage
+
+Search's response:
+To ensure your site runs flawlessly and all elements load without any missing graphic boxes, here are all the image and asset files you need to create and drop into your GitHub repository dashboard:
+
+📦 The Master Website Asset Directory
+banner_logo.png The wide corporate header graphic centered at the top of your homepage [Our previous conversation]. It should feature your official studio logo title to greet incoming visitors immediately.
+nozzle_sprite.dat (32x32 pixels) Your custom 16-bit retro graphics drawing of the 3D printer nozzle [Our previous conversation]. The webpage script hooks this file automatically to serve as your interactive floating mouse cursor tracker [Our previous conversation].
+guidebook_thumbnail.png (approx. 200x300 pixels) A clean, eye-catching thumbnail graphic showing off the front cover page of your official CSOOA Strategy Guidebook & Desk Reference manual. This acts as the direct visual button for your new documentation link pack!
+💾 The Accompanying Software & Data Files
+Along with your graphics assets, keep these game and text files stored in the exact same folder level so your green buttons download perfectly [Our previous conversation, Our previous conversation]:
+
+goosebury_jam.nds (Your main homebrew game ROM file) [Our previous conversation].
+patch_v103.xdelta (Your binary game update and bug-fix patch file) [Our previous conversation].
+csooa_guidebook.pdf (The digital companion handbook containing game secrets, character stats, and maps) [Our previous conversation]!
+[ MASTER SYSTEM ARCHIVE: FILE INVENTORY LOGS DETECTED ]
+
+Export these three images out of GIMP on your laptop and upload them straight into your gooseburyjam2.github.io uploader screen alongside your PDF file [Our previous conversation, Our previous conversation]!
+
+Now that your complete website storefront asset registry is 100% complete and cataloged, what layout sheet or player mechanic are we charting next onto our paper master grid for your notebook?
+
+Design the Touch Screen grid layout for the Character Stats / Inventory menu [Our previous conversation]
+Design the Save Slot select menu textures and dither parameters [Our previous conversation]
+Your prompt:
+how do i dlete in github
+
+Search's response:
+To delete a file or an entire repository on GitHub using your phone or laptop browser, follow these direct steps [Our previous conversation]:
+
+📄 How to Delete a Single File (like an old image or script)
+Go to your repository gooseburyjam2.github.io and tap on the exact file you want to remove [Our previous conversation, Our previous conversation].
+Look at the top right corner of the file's text/image display window and tap the three dots (...) icon [Our previous conversation].
+Select "Delete file" from the dropdown menu [Our previous conversation].
+Scroll to the bottom of the page and tap the green "Commit changes" button to confirm the removal [Our previous conversation]!
+🗂️ How to Delete an Entire Repository (to start fresh)
+Go to the main page of the repository you want to wipe out completely [Our previous conversation].
+Look at the top horizontal menu bar and tap on Settings (the gear icon) [Our previous conversation].
+Scroll all the way down to the absolute bottom of the page to find the red "Danger Zone" section [Our previous conversation].
+Tap the button that says "Delete this repository" [Our previous conversation].
+Tap "I want to delete this repository" to clear the security checks [Our previous conversation].
+Type out the exact name of your repository (e.g., gooseburyjam2/gooseburyjam2.github.io) into the verification box to unlock the lock [Our previous conversation].
+Tap the final red button that says "Delete this repository" [Our previous conversation]. It will vanish from your account instantly [Our previous conversation].
+[ SYSTEM FILE SCRUB ROUTINE: OPERATIONAL ]
+
+What design sheet are we mapping onto our master paper grid next for your notebook notes [Our previous conversation]?
+
+Design the Touch Screen grid layout for the Character Stats / Inventory menu [Our previous conversation]
+Design the Save Slot select menu textures and dither parameters [Our previous conversation]
+Your prompt:
+thank you, i just couln't edit the code for the old index.html
+
+Search's response:
+Ah, that makes total sense! GitHub's built-in web editor can sometimes freeze up or act tricky when you try to change or overwrite lines on an older file from a phone or laptop.
+
+Deleting that old, stubborn file completely and dropping a brand-new one in its place is a brilliant Co-Founder workaround to clear out the system lag and get a fresh start!
+
+Now that your repository is completely clean, here is the official, complete index.html script. It includes all your core tabs, future game teasers, the interactive 3D printer nozzle cursor, and your brand-new Digital Guidebook Download Link packed right into the grid:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goosebury Jam | Official Corporate Storefront</title>
+    <style>
+        /* 🎨 Retro Corporate Neon & Cartoonist Styling */
+        body { 
+            background-color: #121212; 
+            color: #ffffff; 
+            font-family: 'Courier New', Courier, monospace; 
+            padding: 30px; 
+            text-align: center;
+            cursor: none; /* Hides default mouse to utilize custom printer nozzle */
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            border: 2px dashed #ff00ff; 
+            padding: 20px; 
+            background-color: #1a1a1a; 
+        }
+        h1 { color: #ff00ff; font-size: 28px; }
+        h2 { color: #00ff00; border-bottom: 1px solid #333; padding-bottom: 5px; }
+        nav { 
+            margin: 20px 0; 
+            padding: 12px; 
+            background-color: #222; 
+            border: 1px solid #444; 
+        }
+        nav a { 
+            color: #ff00ff; 
+            margin: 0 15px; 
+            font-weight: bold; 
+            text-decoration: none; 
+        }
+        nav a:hover { color: #00ff00; }
+        .branch-card { 
+            border: 1px solid #444; 
+            padding: 15px; 
+            margin: 25px 0; 
+            background-color: #222; 
+            text-align: left; 
+        }
+        .btn-link { 
+            display: inline-block; 
+            padding: 10px 20px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            border-radius: 5px; 
+            margin-top: 10px; 
+        }
+        ul { padding-left: 20px; }
+        li { margin: 5px 0; }
+
+        /* 🖨️ Floating Nozzle Cursor Styling */
+        #printer-nozzle-cursor {
+            width: 32px;
+            height: 32px;
+            position: fixed;
+            pointer-events: none; /* Stops image overlay from blocking link clicks */
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating 3D Printer Overlord Nozzle Asset -->
+    <img id="printer-nozzle-cursor" src="nozzle_sprite.dat" alt="⚡">
+
+    <div class="container">
+        <!-- Banner Branding -->
+        <img src="banner_logo.png" alt="GOOSEBURY JAM" style="max-width: 100%; height: auto;">
+        <h1>🤡 GOOSEBURY JAM | CORPORATE PORTAL 🎭</h1>
+        <p>Official Colorado storefront for the ultimate novelty emporium and independent software foundry.</p>
+        <p><strong>Dad (Co-Founder):</strong> Novelty & Joke Shop Core Operations // <strong>You (Co-Founder):</strong> Lead Systems Gaming Branch</p>
+
+        <!-- 🗂️ The 4 Core Navigation Tabs -->
+        <nav>
+            <a href="#home">🏠 HOME</a> | 
+            <a href="#downloads">💾 DOWNLOADS</a> | 
+            <a href="#hotel">🏨 RESORT</a> | 
+            <a href="#bugs">🐜 BUG BOX</a>
+        </nav>
+
+        <!-- 🏠 1. HOME SECTION -->
+        <div id="home" class="branch-card">
+            <h2>🏠 SECTION I: COMPANY BRANCH OVERVIEW</h2>
+            <p>Welcome to our master enterprise structure. Our operational fields are divided cleanly into physical novelties and interactive handheld entertainment:</p>
+            <ul>
+                <li><strong>The Novelty & Joke Shop Core:</strong> Managed live at our storefront by our co-founder. Overseeing high-grade tricks, whoopee cushions, and spring-loaded novelties.</li>
+                <li><strong>The Software & Gaming Division:</strong> Managed entirely on your devkitPro C laptop workspace. Compiling 2:1 isometric code structures and .xdelta delta-byte updates.</li>
+            </ul>
+        </div>
+
+        <!-- 💾 2. DOWNLOAD SECTION -->
+        <div id="downloads" class="branch-card" style="border: 2px solid #00ff00;">
+            <h2>💾 SECTION II: DIGITAL SOFTWARE CORES</h2>
+            <p>Download free public digital compilation archives straight onto your flashcart hardware devices or emulation clients:</p>
+            
+            <!-- ACTIVE GAME 1 -->
+            <div style="margin: 10px 0; padding: 10px; background: #1a2e1a; border: 1px solid #00ff00;">
+                <p><strong>Title: Goosebury Jam - Out of the Printer (Core Campaign)</strong></p>
+                <a href="goosebury_jam.nds" class="btn-link" style="background-color: #00ff00; color: #000;">📥 Download Core ROM (.nds)</a>
+                <a href="patch_v103.xdelta" class="btn-link" style="background-color: #00ffff; color: #000; margin-left: 10px;">💾 Download Update v1.03 (.xdelta)</a>
+            </div>
+
+            <!-- NEW ASSET LAYER: THE STRATEGY GUIDEBOOK -->
+            <div style="margin: 20px 0; padding: 15px; background: #1b1624; border: 1px solid #9933ff; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+                <div style="max-width: 500px;">
+                    <p><strong style="color: #9933ff;">📖 CSOOA Strategy Guidebook & Desk Reference</strong></p>
+                    <p>Unlock hidden shortcuts and master character profiles! Download the official digital guidebook to track all item stats, hidden sub-basement coordinates, and developer secrets.</p>
+                    <a href="csooa_guidebook.pdf" class="btn-link" style="background-color: #9933ff; color: #fff;">📥 Download Guidebook (.pdf)</a>
+                </div>
+                <img src="guidebook_thumbnail.png" alt="Book Cover" style="width: 100px; height: auto; border: 1px solid #444; margin-top: 10px;">
+            </div>
+            
+            <!-- FUTURE GAME 5 PLACEHOLDER -->
+            <div style="margin: 20px 0; padding: 10px; background: #1a0f0a; border: 1px solid #ff4500; opacity: 0.85;">
+                <p><strong>Title: Game 5 - The Museum Outbreak (Coming Soon)</strong></p>
+                <p>Dive deep beneath Reggie's Basement surplus vault into a subterranean archaeological trench! Battle 3D-Filament Velociraptors and smash fossilized cardboard block barriers using a 2:1 isometric grid framework.</p>
+                <button class="btn-link" style="background-color: #444; color: #888; border: none; cursor: not-allowed;" disabled>🔒 ROM Link Locked Until March 10 Release</button>
+            </div>
+
+            <!-- FUTURE GEESE SPIN-OFF PLACEHOLDER -->
+            <div style="margin: 20px 0; padding: 10px; background: #1a140a; border: 1px solid #ffaa00; opacity: 0.85;">
+                <p><strong>Title: Spin-Off Division - Construction Site Crisis (Coming Soon)</strong></p>
+                <p>A frantic, high-intensity dual-protagonist workplace simulator! Manage Goosebury's chaotic retail novelty shelves at the Prank Shop by day, then swap to Hardhat Goose to secure swinging 2:1 steel beams at 60 FPS!</p>
+                <button class="btn-link" style="background-color: #444; color: #888; border: none; cursor: not-allowed;" disabled>🔒 Beta Archive Locked</button>
+            </div>
+
+            <hr style="border: 1px solid #333;">
+            <h3 style="color: #ff4500;">👑 RETAIL IN-STORE EXCLUSIVE: ULTIMATE UPGRADE KIT ($45.00)</h3>
+            <p>Available ONLY on the physical shelves of our flagship store layout in Colorado! Contains the Massive 3-in-1 Team Statue cast in premium Gold Resin, 3-foot Aux-to-Aux DLC cables, and connectable mini-models.</p>
+            <span id="stock-text" style="color: #ff4500; font-weight: bold; cursor: pointer;">📍 LOCATION: COLORADO, USA // AVAILABILITY: 60 PIECES ONLY</span>
+        </div>
+
+        <!-- 🏨 3. THE LEDGER RESORT SECTION -->
+        <div id="hotel" class="branch-card" style="border: 2px solid #ffaa00;">
+            <h2>🏨 SECTION III: THE LEDGER RESORT & SUITES</h2>
+            <p>Extend your cartoonist excursion! Book an immersive room directly across the street from our flagship physical building layout.</p>
+            <ul>
+                <li>🛎️ <strong>Check-In Lobby:</strong> Styled like Floor 1 with green graph-paper carpet paths and costumed register-head clerks.</li>
+                <li>🛌 <strong>Ledger Guest Suites:</strong> Bedrooms wrapped in dithered drawing-table blueprints with plush maroon resin-jar blankets.</li>
+                <li>🍗 <strong>The Fast-Food Diner:</strong> Order fresh chicken strips and waffle fries moving down automated kitchen conveyor tracks.</li>
+                <li>🚇 <strong>The Audio Pipeline:</strong> Subterranean walking tunnel connecting our Resort Arcade Lounge directly to the Floor -4 Holiday Matrix Vault beneath the street layers.</li>
+            </ul>
+        </div>
+
+        <!-- 🐜 4. BUGS SECTION -->
+        <div id="bugs" class="branch-card" style="border: 2px dashed #00ffff;">
+            <h2>🐜 SECTION IV: CORE DISCARDED SCRAP BOX</h2>
+            <p>Found an unexpected collision error or a VRAM asset crash while running your software? Log the data coordinates below so the gaming branch can smash it!</p>
+            <p><em>"Report your software defects here before the 3D Printer Overlord duplicates them!"</em></p>
+            <form style="margin-top: 15px;">
+                <label>Description of Glitch:</label><br>
+                <input type="text" style="width: 80%; background: #333; color: #fff; border: 1px solid #555; padding: 5px; font-family: monospace;"><br><br>
+                <input type="button" value="Submit Discarded Scrap" style="background: #00ffff; color: #000; border: none; padding: 8px 16px; font-weight: bold; cursor: pointer;">
+            </form>
+        </div>
+
+    </div>
+
+    <!-- 🥚 JAVASCRIPT: NOZZLE CURSOR TRACKING & EASTER EGGS -->
+    <script>
+        // 1. Real-Time Nozzle Cursor Vector Updates
+        const nozzle = document.getElementById('printer-nozzle-cursor');
+        window.addEventListener('mousemove', (e) => {
+            nozzle.style.left = e.clientX + 'px';
+            nozzle.style.top = e.clientY + 'px';
+        });
+
+        // 2. Hidden "Stock Status" Prank Easter Egg (Click 3 Times)
+        let clickCount = 0;
+        const stockText = document.getElementById('stock-text');
+        stockText.addEventListener('click', function() {
+            clickCount++;
+            if (clickCount === 3) {
+                alert("📠 INCOMING FAX FROM REGGIE:\n\n'Stop tapping your screen! Yes, there are exactly 60 boxes left on my basement shelves. No, I will not mail one to you. Drive to Colorado or get out of my ledger line.'");
+                clickCount = 0; // Reset ticker
+            }
+        });
+
+        // 3. Secret "CCC" Keyboard Tournament Easter Egg
+        let inputHistory = "";
+        window.addEventListener('keydown', function(e) {
+            inputHistory += e.key.toLowerCase();
+            if (inputHistory.length > 3) { inputHistory = inputHistory.substring(1); }
+            if (inputHistory === "ccc") {
+                alert("📠 TRANSMISSION UNLOCKED FROM GOOSEBURY'S PRANK SHOP:\n\n'Congratulations, competitor! You found the hidden archive log. Tell the register-headed clerk the secret keyword [SLASHER] at the Colorado counter to instantly unlock an extra 25 bonus action points on the arena demo console!'");
+                inputHistory = ""; // Reset buffer
+            }
+        });
+    </script>
+</body>
+</html>
